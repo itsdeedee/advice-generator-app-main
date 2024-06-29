@@ -66,13 +66,17 @@
         padding: 13px 15px;
         border: none;
       }
+      .dice-btn:hover {
+        box-shadow: 0 0 18px 6px #54faac;
+        cursor: pointer;
+      }
     </style>
   </head>
   <body>
     <div class="container">
       <div class="adviceSection">
-        <p>ADVICE <span class="adviceID">#117</span></p>
-        <h2 class="adviceText">
+        <p>ADVICE #<span id="advice-id">117</span></p>
+        <h2 class="adviceText" id="advice-text">
           "It is easy to sit up and take notice, what's difficult is getting up
           and taking action."
         </h2>
@@ -85,7 +89,7 @@
             </g>
           </g>
         </svg>
-        <button class="dice-btn">
+        <button class="dice-btn" id="advice-btn">
           <image src="images/icon-dice.svg" class="dice-icon"></image>
         </button>
       </div>
@@ -98,4 +102,5 @@
       >. Coded by <a href="#">Divine Joseph</a>.
     </div>
   </body>
+  <script src="index.js"></script>
 </html>
